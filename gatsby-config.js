@@ -31,5 +31,27 @@ module.exports = {
         path:'${__dirname}/src/images'
       },
     },
+    //gatsby plugins
+    //https://www.gatsbyjs.org/plugins/       search plugins on left side
+    //--------------------
+    //sharp = image manipulation library
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    //mdx = mdx markdown integration
+    {
+      resolve:`gatsby-plugin-mdx`,
+      options: {
+        extension: [`.md`, `.mdx`],
+        //optimizes images with sharp
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
