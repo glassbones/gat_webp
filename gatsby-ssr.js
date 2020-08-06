@@ -2,6 +2,7 @@ import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 
+// https://www.gatsbyjs.org/docs/ssr-apis/  <- docs
 //this wraps the entire root with styled components themeProvider
 // element = react app
 
