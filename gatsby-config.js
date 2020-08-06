@@ -6,5 +6,30 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      //name of package
+      resolve: 'gatsby-source-filesystem',
+      //info gatsby fileSystem needs to find graphql content
+      options: {
+        name:'pages',
+        //dir name = wherever web page is hosted
+        path:'${__dirname}/src/pages'
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name:'posts',
+        path:'${__dirname}/src/posts'
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name:'images',
+        path:'${__dirname}/src/images'
+      },
+    },
+  ],
 }
