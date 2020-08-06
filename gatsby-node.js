@@ -1,5 +1,5 @@
 //https://www.gatsbyjs.org/tutorial/part-seven/   <- documentation
-
+//https://www.youtube.com/watch?v=7xTMu-nUDqY   <- tutorial walkthrough
 /*
 exports.createPages = async function({actions, graphql}) {
 
